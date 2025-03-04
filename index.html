@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>penguin-fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .roboto-fonts {
+        font-family: "Roboto", sans-serif;
+      }
+      #slidebar-active:checked ~ .links {
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-full h-screen bg-[#FFFBF0]">
+      <div class="w-full flex justify-around items-center py-4">
+        <div>
+          <img class="w-72" src="icons/logo.png" alt="" />
+        </div>
+        <input type="checkbox" id="slidebar-active" class="hidden" />
+        <label for="slidebar-active" class="block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#363958"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <div
+          class="links flex flex-col space-between items-center gap-12 fixed right-[150%] top-0 w-72 bg-[#363958] md:flex-row md:relative md:right-0 md:bg-[#FFFBF0] md:w-auto text-[#A4BC46] md:text-[#363958] h-[100%]"
+        >
+          <label for="slidebar-active" class="block md:hidden mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#A4BC46"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
